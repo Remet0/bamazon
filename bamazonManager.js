@@ -69,8 +69,41 @@ inquirer.prompt([
         break;
 
         case 'Add New Product':
-
-
+        inquirer.prompt([
+            {
+                type: 'input',
+                message: 'Item Name?',
+                name: 'name'
+            },
+            {
+                type: 'input',
+                message: 'Item Department?',
+                name: 'department'
+            },
+            {
+                type: 'input',
+                message: 'Item Price?',
+                name: 'price'
+            },
+            {
+                type: 'input',
+                message: 'Quantity added?',
+                name: 'stock'
+            }
+        ]).then(function(res){
+            connection.query(`INSERT INTO products SET ?`,
+            {
+                product_name: res.name,
+                department_name: res.department,
+                price: res.price,
+                stock_quantity: res.stock
+            }
+            ,function(err){
+                if(err) throw err;
+                console.log('Item Added')
+                setTimeout(start, 2000);
+            })
+        })
         break;
     }
 })
