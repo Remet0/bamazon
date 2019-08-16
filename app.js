@@ -56,11 +56,10 @@ function sale(){
             }
             if(response[0].stock_quantity <= 0 || amount > response[0].stock_quantity){
                 console.log('Insufficient quantity! Order Cancled.')
-                setTImeout(start, 5000);
+                setTimeout(start, 5000);
             }else{
                 total = amount * response[0].price;
                 amount = response[0].stock_quantity - amount;
-                console.log(amount);
                 connection.query(`UPDATE products SET stock_quantity = ${amount}  WHERE item_id = ${itemID}`,
                 function(err){
                     if(err){
