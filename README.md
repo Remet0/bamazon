@@ -9,7 +9,7 @@ To use this app clone the repositroy to your system. You will need your own sql 
 
 
 When you run the app you will see a list of current items in stock
-![Item list](/images/Item-List.jpg)
+![Item list](/images/Item-list.jpg)
 
 You can then input the item ID of the item you want and how much of that item you want to buy.
 
@@ -17,7 +17,7 @@ You can then input the item ID of the item you want and how much of that item yo
 
 Stock will be auto updated.
 
-![Item Bought](/images/Updated.jpg)
+![Updated Stock](/images/Updated-Stock.jpg)
 
 If the item is out of stock you will be notified and the order will be cancelled.
 
@@ -26,24 +26,24 @@ If the item is out of stock you will be notified and the order will be cancelled
 
 As a manager you have more options. 
 
-![Item Bought](/images/Options.jpg)
+![Manager Options](/images/Options.jpg)
 
 Option one will allow you to see all products for sale.
 
-![Item Bought](/images/Option-one.jpg)
+![Products for sale](/images/Option-one.jpg)
 
 Option two will show you all products with less than 30 stock.
 
-![Item Bought](/images/Option-two.jpg)
+![Low Stock Items](/images/Option-two.jpg)
 
 Option three will allow you to add more stock to a certain item.
 
-![Item Bought](/images/Option-three.jpg)
+![Add Stock](/images/Option-three.jpg)
 
-![Item Bought](/images/Option-three-updated.jpg)
+![Updated Stock](/images/Option-three-updated.jpg)
 
 Option four will allow you to add a whole new item to your store.
 
-![Item Bought](/images/Option-four.jpg)
+![Add Item](/images/Option-four.jpg)
 
-![Item Bought](/images/Option-four-updated.jpg)
+![Updated Item](/images/Option-four-updated.jpg)
